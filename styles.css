@@ -1,0 +1,44 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+/* --- Part 1: CSS Transitions --- */
+#hoverBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+#hoverBtn:hover {
+  background: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* --- Animated Box --- */
+.box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin: 40px auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Part 1: Keyframes */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+
+/* Active animation class */
+.animate {
+  animation: bounce 1s infinite;
+}
